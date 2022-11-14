@@ -24,10 +24,9 @@ import com.kms.katalon.core.model.FailureHandling as FailureHandling
 
 Mobile.startExistingApplication('com.mobikwik_new')
 
-//Mobile.tap(findTestObject('TestCase/android.widget.TextView0 - Invest Now'), 0)
-//Mobile.tap(findTestObject('TestCase/android.widget.TextView0 - Proceed to pay'), 0)
-//
-//Mobile.tap(findTestObject('TestCase/android.widget.TextView0 - Netbanking'), 0)
+Mobile.tap(findTestObject('TestCase/android.widget.TextView0 - Invest Now'), 0)
+Mobile.tap(findTestObject('TestCase/android.widget.TextView0 - Proceed to pay'), 0)
+Mobile.tap(findTestObject('TestCase/android.widget.TextView0 - Netbanking'), 0)
 
 Mobile.delay(10)
 
@@ -41,6 +40,7 @@ device_Width = Mobile.getDeviceWidth()
  
 
 println(device_Height);
+println device_Width;
  
  
 'Storing the startX value by dividing device width by 2. Because x coordinates are constant for Vertical Swiping'
@@ -69,15 +69,15 @@ int endY = device_Height * 0.70
  
 'Swipe Vertical from top to bottom'
  
-Mobile.swipe(startX, endY, endX, startY)
+// Mobile.swipe(startX, endY, endX, startY)
  
  
  
 'Swipe Vertical from bottom to top'
  
-// Mobile.swipe(startX, startY, endX, endY)
+//Mobile.swipe(startX, startY, endX, endY)
 
-// Mobile.scrollToText('Induslnd Bank')
+//Mobile.scrollToText('IDBI Bank')
 
 Mobile.closeApplication()
 
