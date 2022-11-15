@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Buy Gold</name>
+   <name>BuyGold</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>d705dd6b-4823-4d30-9b34-2b6b92c19e84</testCaseGuid>
+   <testCaseGuid>f128a7e1-7fc7-469e-81ba-b80eda2fb9d6</testCaseGuid>
 </TestCaseEntity>

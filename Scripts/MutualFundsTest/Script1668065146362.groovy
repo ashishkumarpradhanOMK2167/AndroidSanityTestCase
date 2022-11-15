@@ -16,20 +16,43 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
 Mobile.startExistingApplication("com.mobikwik_new")
-Mobile.tap(findTestObject('Object Repository/MainPage/Investments  Insurance'), 0)
-Mobile.tap(findTestObject('Object Repository/MainPage/DirectMutualFunds'), 0)
 
-boolean checkPage = Mobile.verifyElementText(findTestObject('Object Repository/MutualFunds/Mutual Funds Portfolio'), "Mutual Funds Portfolio", FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(5)
+Mobile.tap(findTestObject('Object Repository/PayRent/Main Page - See all services'), 0)
+
+
+Mobile.scrollToText("Credit Card Zone")
+Mobile.tap(findTestObject('Object Repository/MutualFunds/Direct Mutual Funds 2'), 0)
+
+Mobile.delay(5)
+
+//boolean checkPage = Mobile.verifyElementText(findTestObject('Object Repository/MutualFunds/Mutual Funds Portfolio'), "Mutual Funds Portfolio", FailureHandling.STOP_ON_FAILURE)
+//if(checkPage){
+//    date = ""
+//	PortfolioValue = "0"
+//	TotalInvested = "0"
+//	
+//	boolean verifyHoldings = false;
+//	verifyHoldings = Mobile.checkElement(findTestObject('Object Repository/MutualFunds/PortfolioValue - '), 0 , FailureHandling.CONTINUE_ON_FAILURE)
+//	
+//	if(verifyHoldings){
+//		date = Mobile.getText(findTestObject('Object Repository/MutualFunds/Portfolio value as of 09 Nov 2022'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+//		PortfolioValue = Mobile.getText(findTestObject('Object Repository/MutualFunds/PortfolioValue - '), 0, FailureHandling.CONTINUE_ON_FAILURE)
+//		Mobile.scrollToText("View Holdings" , FailureHandling.CONTINUE_ON_FAILURE)
+//		TotalInvested = Mobile.getText(findTestObject('Object Repository/MutualFunds/Total Invested - 1600'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+//		println(date)
+//		println("PortfolioValue = " + PortfolioValue)
+//		println("Total Invested = " + TotalInvested)
+//	}
+//	else {
+//		println("Invest in Mutual Funds")
+//	}
+//}
+
+boolean checkPage = Mobile.verifyElementText(findTestObject('Object Repository/MutualFunds/Mutual Fund Dashboard'), "Mutual Fund Dashboard", FailureHandling.STOP_ON_FAILURE)
 if(checkPage){
-
-	date = Mobile.getText(findTestObject('Object Repository/MutualFunds/Portfolio value as of 09 Nov 2022'), 0)
-	PortfolioValue = Mobile.getText(findTestObject('Object Repository/MutualFunds/PortfolioValue - '), 0)
-	Mobile.scrollToText("View Holdings")
-	TotalInvested = Mobile.getText(findTestObject('Object Repository/MutualFunds/Total Invested - 1600'), 0)
-	println(date)
-	println("PortfolioValue = " + PortfolioValue)
-	println("Total Invested = " + TotalInvested)
 	
 }
+
 
 Mobile.closeApplication()

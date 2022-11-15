@@ -15,10 +15,37 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-
 Mobile.startExistingApplication("com.mobikwik_new")
-Mobile.tap(findTestObject('Object Repository/MainPage/Investments  Insurance'), 0)
-Mobile.tap(findTestObject('Object Repository/BuyGold/Buy 99.5 pure gold'), 0)
+Mobile.tap(findTestObject('Object Repository/PayRent/Main Page - See all services'), 0)
+
+Mobile.scrollToText("Credit Card Zone")
+
+Mobile.tap(findTestObject('Object Repository/BuyGold/Buy 99.5 pure gold 2'), 0)
+
+// Buying Gold
+Mobile.delay(3)
+Mobile.tap(findTestObject('Object Repository/BuyGold/Buy Gold'),0)
+Mobile.setText(findTestObject('Object Repository/BuyGold/BuyGoldinRupees - '), "1", 0)
+Mobile.tap(findTestObject('Object Repository/BuyGold/Pay'), 0)
+Mobile.delay(3)
+
+boolean checkPaymentSuccesPage = Mobile.verifyElementText(findTestObject('Object Repository/BuyGold/PaymentSuccessful-Payment Successful'), "Payment Successful", FailureHandling.CONTINUE_ON_FAILURE)
+if(checkPaymentSuccesPage){
+	
+	OrderID = Mobile.getText(findTestObject('Object Repository/BuyGold/PaymentSuccessful-Order Id'), 0, FailureHandling.STOP_ON_FAILURE)
+	Quantity = Mobile.getText(findTestObject('Object Repository/BuyGold/PaymentSuccessful-Quantity'), 0, FailureHandling.STOP_ON_FAILURE)
+	DateOfBuy = Mobile.getText(findTestObject('Object Repository/BuyGold/PaymentSuccessful- Date'), 0, FailureHandling.STOP_ON_FAILURE)
+	Amount = Mobile.getText(findTestObject('Object Repository/BuyGold/PaymentSuccessful-Amount'), 0, FailureHandling.STOP_ON_FAILURE)
+	
+	println("Order ID " + OrderID)
+	println("Quantity in grams " + Quantity)
+	println("Date " + DateOfBuy)
+	println("Total Amount Paid " + Amount)
+}
+
+
+Mobile.pressBack()
+
 
 GoldBalance = Mobile.getText(findTestObject('Object Repository/BuyGold/Gold Balance -   0.4213 gram(s)'), 0)
 NetLoss = Mobile.getText(findTestObject('Object Repository/BuyGold/Net Loss  7.19'), 0)
@@ -30,8 +57,10 @@ println(NetLoss)
 println(TotalPurchased)
 println(TotalSold)
 
-Mobile.tap(findTestObject('Object Repository/BuyGold/Sell Gold'),0)
-Mobile.setText(findTestObject('Object Repository/BuyGold/SellGoldinRs'), "1", 0)
-Mobile.tap(findTestObject('Object Repository/BuyGold/Sell - Continue'),0)
-// Mobile.tap(findTestObject(findTestObject('Object Repository/BuyGold/Sell Gold Final'),0)
+
+Mobile.pressBack()
+Mobile.pressBack()
+Mobile.pressBack()
+
+Mobile.closeApplication()
 
