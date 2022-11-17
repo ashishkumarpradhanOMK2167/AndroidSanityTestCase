@@ -16,7 +16,10 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
 Mobile.startExistingApplication("com.mobikwik_new")
-Mobile.tap(findTestObject('Object Repository/PayRent/Main Page - See all services'), 0)
+
+CustomKeywords.'test.ReSetUpApp.goToHome'()
+
+Mobile.tap(findTestObject('MainPage/Main Page - See all services'), 0)
 
 Mobile.scrollToText("Credit Card Zone")
 
@@ -56,11 +59,6 @@ println(GoldBalance)
 println(NetLoss)
 println(TotalPurchased)
 println(TotalSold)
-
-
-Mobile.pressBack()
-Mobile.pressBack()
-Mobile.pressBack()
 
 Mobile.closeApplication()
 

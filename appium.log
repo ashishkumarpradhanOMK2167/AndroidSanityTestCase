@@ -1,24 +1,24 @@
 [35m[Appium][39m Welcome to Appium v1.22.3
 [35m[Appium][39m Non-default server args:
-[35m[Appium][39m   port: 51374
+[35m[Appium][39m   port: 57617
 [35m[Appium][39m   loglevel: info
-[35m[Appium][39m   tmpDir: /var/folders/l8/_fw4hyqx46bbtnqd0mtrfrxw0000gp/T//Katalon/Appium/Temp1668519790482
-[35m[Appium][39m   chromedriverPort: 51375
+[35m[Appium][39m   tmpDir: /var/folders/l8/_fw4hyqx46bbtnqd0mtrfrxw0000gp/T//Katalon/Appium/Temp1668687311125
+[35m[Appium][39m   chromedriverPort: 57618
 [35m[Appium][39m Deprecated server args:
 [35m[Appium][39m   [31m--chromedriver-port[39m => --default-capabilities
 [35m[Appium][39m Default capabilities, which will be added to each request unless overridden by desired capabilities:
-[35m[Appium][39m   chromedriverPort: 51375
-[35m[Appium][39m Appium REST http interface listener started on 0.0.0.0:51374
+[35m[Appium][39m   chromedriverPort: 57618
+[35m[Appium][39m Appium REST http interface listener started on 0.0.0.0:57617
 [35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m4 ms - 68[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m5 ms - 68[39m
 [35m[HTTP][39m [90m[39m
 [35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
 [35m[HTTP][39m [90m{}[39m
 [35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m1 ms - 68[39m
 [35m[HTTP][39m [90m[39m
 [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m
-[35m[HTTP][39m [90m{"desiredCapabilities":{"appPackage":"com.android.settings","deviceId":"","deviceName":"Google Pixel 3a (Android 12)","platform":"ANDROID","appActivity":".Settings","newCommandTimeout":1800,"platformVersion":"12","automationName":"uiautomator2","autoGrantPermissions":true,"platformName":"Android","udid":"172.18.29.18:5555","systemPort":8205},"capabilities":{"firstMatch":[{"appium:appActivity":".Settings","appium:appPackage":"com.android.settings","appium:autoGrantPermissions":true,"appium:automationName":"uiautomator2","deviceId":"","appium:deviceName":"Google Pixel 3a (Android 12)","appium:newCommandTimeout":1800,"platform":"ANDROID","platformName":"android","appium:platformVersion":"12","appium:systemPort":8205,"appium:udid":"172.18.29.18:5555"}]}}[39m
+[35m[HTTP][39m [90m{"desiredCapabilities":{"appPackage":"com.android.settings","deviceId":"","deviceName":"Google Pixel 3a (Android 12)","platform":"ANDROID","appActivity":".Settings","newCommandTimeout":1800,"platformVersion":"12","automationName":"uiautomator2","autoGrantPermissions":true,"platformName":"Android","udid":"172.18.29.18:5555","systemPort":8232},"capabilities":{"firstMatch":[{"appium:appActivity":".Settings","appium:appPackage":"com.android.settings","appium:autoGrantPermissions":true,"appium:automationName":"uiautomator2","deviceId":"","appium:deviceName":"Google Pixel 3a (Android 12)","appium:newCommandTimeout":1800,"platform":"ANDROID","platformName":"android","appium:platformVersion":"12","appium:systemPort":8232,"appium:udid":"172.18.29.18:5555"}]}}[39m
 [35m[BaseDriver][39m The following capabilities are not standard capabilities and should have an extension prefix:
 [35m[BaseDriver][39m   deviceId
 [35m[BaseDriver][39m   platform
@@ -27,7 +27,7 @@
 [35m[BaseDriver][39m The following capabilities were provided, but are not recognized by Appium:
 [35m[BaseDriver][39m   deviceId
 [35m[BaseDriver][39m   platform
-[35m[BaseDriver][39m Session created with session id: 59028fa6-5410-49aa-906f-9083b2cb91f1
+[35m[BaseDriver][39m Session created with session id: 4d543c21-4e82-4ad5-ad85-5523e7afeb28
 [35m[UiAutomator2][39m Starting 'com.android.settings' directly on the device
 [35m[ADB][39m Found 1 'build-tools' folders under '/Users/ashishkumarpradhan/.katalon/tools/android_sdk' (newest first):
 [35m[ADB][39m     /Users/ashishkumarpradhan/.katalon/tools/android_sdk/build-tools/29.0.3
@@ -55,42 +55,42 @@
 [35m[WD Proxy][39m Determined the downstream protocol as 'W3C'
 [35m[AndroidDriver][39m Screen already unlocked, doing nothing
 [35m[UiAutomator2][39m Starting 'com.android.settings/.Settings and waiting for 'com.android.settings/.Settings'
-[35m[Appium][39m New AndroidUiautomator2Driver session created successfully, session 59028fa6-5410-49aa-906f-9083b2cb91f1 added to master session list
-[35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[32m200[39m [90m12920 ms - 1207[39m
+[35m[Appium][39m New AndroidUiautomator2Driver session created successfully, session 4d543c21-4e82-4ad5-ad85-5523e7afeb28 added to master session list
+[35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[32m200[39m [90m13375 ms - 1207[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/59028fa6-5410-49aa-906f-9083b2cb91f1[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/4d543c21-4e82-4ad5-ad85-5523e7afeb28[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- GET /wd/hub/session/59028fa6-5410-49aa-906f-9083b2cb91f1 [39m[32m200[39m [90m23 ms - 1161[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/4d543c21-4e82-4ad5-ad85-5523e7afeb28 [39m[32m200[39m [90m32 ms - 1161[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/59028fa6-5410-49aa-906f-9083b2cb91f1[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/4d543c21-4e82-4ad5-ad85-5523e7afeb28[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- GET /wd/hub/session/59028fa6-5410-49aa-906f-9083b2cb91f1 [39m[32m200[39m [90m17 ms - 1161[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/4d543c21-4e82-4ad5-ad85-5523e7afeb28 [39m[32m200[39m [90m22 ms - 1161[39m
 [35m[HTTP][39m [90m[39m
 [35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
 [35m[HTTP][39m [90m{}[39m
 [35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m1 ms - 68[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/59028fa6-5410-49aa-906f-9083b2cb91f1/timeouts[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/4d543c21-4e82-4ad5-ad85-5523e7afeb28/timeouts[39m
 [35m[HTTP][39m [90m{"implicit":60000}[39m
-[35m[HTTP][39m [37m<-- POST /wd/hub/session/59028fa6-5410-49aa-906f-9083b2cb91f1/timeouts [39m[32m200[39m [90m2 ms - 14[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/4d543c21-4e82-4ad5-ad85-5523e7afeb28/timeouts [39m[32m200[39m [90m2 ms - 14[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/59028fa6-5410-49aa-906f-9083b2cb91f1/appium/device/activate_app[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/4d543c21-4e82-4ad5-ad85-5523e7afeb28/appium/device/activate_app[39m
 [35m[HTTP][39m [90m{"bundleId":"com.mobikwik_new"}[39m
-[35m[HTTP][39m [37m<-- POST /wd/hub/session/59028fa6-5410-49aa-906f-9083b2cb91f1/appium/device/activate_app [39m[32m200[39m [90m4936 ms - 14[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/4d543c21-4e82-4ad5-ad85-5523e7afeb28/appium/device/activate_app [39m[32m200[39m [90m4760 ms - 14[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/59028fa6-5410-49aa-906f-9083b2cb91f1/source[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/4d543c21-4e82-4ad5-ad85-5523e7afeb28/source[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[W3C (59028fa6)][39m Driver proxy active, passing request on via HTTP proxy
-[35m[WD Proxy][39m Replacing sessionId 13b01fb1-0494-4c28-8008-1f05520ccf8e with 59028fa6-5410-49aa-906f-9083b2cb91f1
-[35m[HTTP][39m [37m<-- GET /wd/hub/session/59028fa6-5410-49aa-906f-9083b2cb91f1/source [39m[32m200[39m [90m452 ms - 18078[39m
+[35m[W3C (4d543c21)][39m Driver proxy active, passing request on via HTTP proxy
+[35m[WD Proxy][39m Replacing sessionId d27d32fc-6ed9-4ac5-a229-0d0ba2a56521 with 4d543c21-4e82-4ad5-ad85-5523e7afeb28
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/4d543c21-4e82-4ad5-ad85-5523e7afeb28/source [39m[32m200[39m [90m684 ms - 29192[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/59028fa6-5410-49aa-906f-9083b2cb91f1/screenshot[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/4d543c21-4e82-4ad5-ad85-5523e7afeb28/screenshot[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- GET /wd/hub/session/59028fa6-5410-49aa-906f-9083b2cb91f1/screenshot [39m[32m200[39m [90m794 ms - 154818[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/4d543c21-4e82-4ad5-ad85-5523e7afeb28/screenshot [39m[32m200[39m [90m940 ms - 214328[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mDELETE[39m [37m/wd/hub/session/59028fa6-5410-49aa-906f-9083b2cb91f1[39m
+[35m[HTTP][39m [37m-->[39m [37mDELETE[39m [37m/wd/hub/session/4d543c21-4e82-4ad5-ad85-5523e7afeb28[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[Appium][39m Removing session 59028fa6-5410-49aa-906f-9083b2cb91f1 from our master session list
+[35m[Appium][39m Removing session 4d543c21-4e82-4ad5-ad85-5523e7afeb28 from our master session list
 [35m[UiAutomator2][39m Restoring hidden api policy to the device default configuration
-[35m[HTTP][39m [37m<-- DELETE /wd/hub/session/59028fa6-5410-49aa-906f-9083b2cb91f1 [39m[32m200[39m [90m468 ms - 14[39m
+[35m[HTTP][39m [37m<-- DELETE /wd/hub/session/4d543c21-4e82-4ad5-ad85-5523e7afeb28 [39m[32m200[39m [90m529 ms - 14[39m
 [35m[HTTP][39m [90m[39m

@@ -16,7 +16,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
 Mobile.startExistingApplication("com.mobikwik_new")
-Mobile.tap(findTestObject('Object Repository/PayRent/Main Page - See all services'), 0)
+Mobile.tap(findTestObject('MainPage/Main Page - See all services'), 0)
 
 Mobile.scrollToText("Credit Card Zone")
 Mobile.tap(findTestObject('Object Repository/SOE/Loans'),0)
