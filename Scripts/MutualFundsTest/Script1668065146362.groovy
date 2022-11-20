@@ -17,14 +17,16 @@ import internal.GlobalVariable as GlobalVariable
 
 Mobile.startExistingApplication("com.mobikwik_new")
 
-Mobile.delay(5)
+CustomKeywords.'test.ReSetUpApp.goToHome'()
+
+Mobile.delay(1)
 Mobile.tap(findTestObject('MainPage/Main Page - See all services'), 0)
 
 
 Mobile.scrollToText("Credit Card Zone")
 Mobile.tap(findTestObject('Object Repository/MutualFunds/Direct Mutual Funds 2'), 0)
 
-Mobile.delay(5)
+Mobile.delay(6)
 
 //boolean checkPage = Mobile.verifyElementText(findTestObject('Object Repository/MutualFunds/Mutual Funds Portfolio'), "Mutual Funds Portfolio", FailureHandling.STOP_ON_FAILURE)
 //if(checkPage){
@@ -50,9 +52,24 @@ Mobile.delay(5)
 //}
 
 boolean checkPage = Mobile.verifyElementText(findTestObject('Object Repository/MutualFunds/Mutual Fund Dashboard'), "Mutual Fund Dashboard", FailureHandling.STOP_ON_FAILURE)
-if(checkPage){
-	
-}
 
+Mobile.tap(findTestObject('Object Repository/MutualFunds/ProfileImage'), 0)
+
+Name = Mobile.getText(findTestObject('Object Repository/MutualFunds/Name - Ashish Kumar Pradhan'), 0)
+println(Name)
+
+Mobile.verifyElementText(findTestObject('Object Repository/MutualFunds/Name - Ashish Kumar Pradhan'), "Ashish Kumar Pradhan", FailureHandling.STOP_ON_FAILURE)
+
+PanNumber = Mobile.getText(findTestObject('Object Repository/MutualFunds/Pan - FMSPP7878E'), 0)
+println(PanNumber)
+
+Mobile.verifyElementText(findTestObject('Object Repository/MutualFunds/Pan - FMSPP7878E'), "FMSPP7878E", FailureHandling.STOP_ON_FAILURE)
+
+Email = Mobile.getText(findTestObject('Object Repository/MutualFunds/Email - akp750750gmail.com'), 0)
+println(Email)
+
+Mobile.verifyElementText(findTestObject('Object Repository/MutualFunds/Email - akp750750gmail.com'),"akp750750@gmail.com", FailureHandling.STOP_ON_FAILURE)
+
+CustomKeywords.'test.ReSetUpApp.back'(3)
 
 Mobile.closeApplication()

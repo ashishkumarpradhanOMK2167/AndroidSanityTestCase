@@ -1,0 +1,16 @@
+{
+  "keywordFileContentHash": "B2F31F2D388DB416017429C5CD434DA6",
+  "keywordClasses": [
+    {
+      "name": "function.SpinTheWheel",
+      "keywordMethods": [
+        {
+          "name": "spin",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

@@ -60,5 +60,9 @@ println(NetLoss)
 println(TotalPurchased)
 println(TotalSold)
 
+
+CustomKeywords.'test.ReSetUpApp.back'(2)
+
+
 Mobile.closeApplication()
 

@@ -67,6 +67,8 @@ println(PayAmount)
 
 Mobile.tap(findTestObject('Object Repository/MobileRechargeCrossSell/PayAmount'), 0)
 
+CustomKeywords.'test.ReSetUpApp.back'(4)
+
 Mobile.closeApplication()
 
 

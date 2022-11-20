@@ -1,0 +1,16 @@
+{
+  "keywordFileContentHash": "EB51088C7BFAA98C23CAD8EAEAD679A6",
+  "keywordClasses": [
+    {
+      "name": "function.History",
+      "keywordMethods": [
+        {
+          "name": "checkAmount",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

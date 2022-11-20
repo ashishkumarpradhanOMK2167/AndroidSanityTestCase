@@ -76,4 +76,7 @@ Mobile.pressBack()
 
 Mobile.tap(findTestObject('Object Repository/P2PXtraInvest/Cancel transaction - Yes'), 0)
 
+CustomKeywords.'test.ReSetUpApp.back'(3)
+
 Mobile.closeApplication()
+

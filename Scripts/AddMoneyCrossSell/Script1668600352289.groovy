@@ -20,7 +20,9 @@ CustomKeywords.'test.ReSetUpApp.goToHome'()
 
 Mobile.tap(findTestObject('Object Repository/AddMoneyCrossSell/HomeBalanceBreakUp'), 0)
 
-Mobile.tap(findTestObject('Object Repository/AddMoneyCrossSell/Add Money'), 0)
+// Mobile.tap(findTestObject('Object Repository/AddMoneyCrossSell/Add Money'), 0)
+
+Mobile.tap(findTestObject('Object Repository/AddMoneyCrossSell/Add Money2'), 0)
 
 int amount = 10;
 addingAmount = amount.toString()
@@ -53,6 +55,6 @@ Mobile.tap(findTestObject('Object Repository/AddMoneyCrossSell/Continue'), 0)
 
 Mobile.verifyElementText(findTestObject('Object Repository/AddMoneyCrossSell/AMCS-PayableAmount'), PayAmount, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.pressBack()
+CustomKeywords.'test.ReSetUpApp.back'(2)
 
 Mobile.closeApplication()

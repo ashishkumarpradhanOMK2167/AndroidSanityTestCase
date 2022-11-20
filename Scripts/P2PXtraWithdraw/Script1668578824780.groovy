@@ -63,6 +63,7 @@ Mobile.pressBack()
 
 Mobile.verifyElementText(findTestObject('P2PXtraWithdraw/YourInvestment - 101'), yourInvestmentAfterWithdraw, FailureHandling.STOP_ON_FAILURE)
 
+CustomKeywords.'test.ReSetUpApp.back'(2)
 
 Mobile.closeApplication()
 

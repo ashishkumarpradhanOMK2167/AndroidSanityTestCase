@@ -22,7 +22,9 @@ CustomKeywords.'test.ReSetUpApp.goToHome'()
 
 Mobile.tap(findTestObject('Object Repository/RNR/RNR'), 0)
 
-boolean checkSTW1 = Mobile.verifyElementText(findTestObject('Object Repository/RNR/Spin the wheel'),"Spin the wheel",FailureHandling.CONTINUE_ON_FAILURE)
+// Mobile.tap(findTestObject('Object Repository/RNR/Cross'),0)
+
+boolean checkSTW1 = Mobile.verifyElementText(findTestObject('Object Repository/RNR/Spin the wheel'),"Spin the wheel",FailureHandling.OPTIONAL)
 if(checkSTW1){
 	CustomKeywords.'function.SpinTheWheel.spin'()
 	Mobile.tap(findTestObject('Object Repository/RNR/Cross'), 0)
@@ -33,7 +35,7 @@ Mobile.scrollToText("Spin Now")
 
 Mobile.tap(findTestObject('Object Repository/RNR/Spin Now'), 0)
 
-boolean checkSTW2 = Mobile.verifyElementText(findTestObject('Object Repository/RNR/Spin the wheel'),"Spin the wheel",FailureHandling.CONTINUE_ON_FAILURE)
+boolean checkSTW2 = Mobile.verifyElementText(findTestObject('Object Repository/RNR/Spin the wheel'),"Spin the wheel",FailureHandling.OPTIONAL)
 if(checkSTW2){
 	CustomKeywords.'function.SpinTheWheel.spin'()
 }
@@ -44,7 +46,6 @@ Mobile.tap(findTestObject('Object Repository/RNR/Your Rewards'),0)
 
 Mobile.delay(5)
 
-Mobile.pressBack()
-Mobile.pressBack()
+CustomKeywords.'test.ReSetUpApp.back'(2)
 
 Mobile.closeApplication()

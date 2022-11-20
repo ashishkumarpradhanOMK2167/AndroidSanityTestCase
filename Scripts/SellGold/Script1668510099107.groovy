@@ -76,5 +76,7 @@ println(TotalPurchased)
 println(TotalSold)
 
 
-Mobile.pressBack()
+CustomKeywords.'test.ReSetUpApp.back'(2)
+
+Mobile.closeApplication()
 

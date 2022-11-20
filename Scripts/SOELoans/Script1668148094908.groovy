@@ -16,14 +16,20 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
 Mobile.startExistingApplication("com.mobikwik_new")
+
+CustomKeywords.'test.ReSetUpApp.goToHome'()
+
 Mobile.tap(findTestObject('MainPage/Main Page - See all services'), 0)
 
 Mobile.scrollToText("Credit Card Zone")
 Mobile.tap(findTestObject('Object Repository/SOE/Loans'),0)
+Mobile.delay(3)
+Mobile.verifyElementText(findTestObject('Object Repository/SOE/Get offer upto 200000 and pay in easy EMIs'),"Get offer upto ₹2,00,000 and pay in easy EMIs" , FailureHandling.STOP_ON_FAILURE)
 
-Boolean check = Mobile.verifyElementText(findTestObject('Object Repository/SOE/Get offer upto 200000 and pay in easy EMIs'),"Get offer upto ₹2,00,000 and pay in easy EMIs" , FailureHandling.STOP_ON_FAILURE)
+Mobile.tap(findTestObject('Object Repository/SOE/Checkbox'), 0)
 
-Mobile.tap(findTestObject('Object Repository/SOE/CheckBox'),0)
-Mobile.tap(findTestObject('Object Repository/SOE/Get started'),0)
+Mobile.tap(findTestObject('Object Repository/SOE/Get started'), 0)
+
+CustomKeywords.'test.ReSetUpApp.back'(2)
 
 Mobile.closeApplication()

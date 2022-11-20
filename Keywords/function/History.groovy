@@ -1,4 +1,4 @@
-package test
+package function
 
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
@@ -20,24 +20,21 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import internal.GlobalVariable
 
-public class ReSetUpApp {
-
+public class History {
+	
 	@Keyword
-	def goToHome() {
-		boolean onHome=false;
-		while(!onHome) {
-			if(Mobile.verifyElementExist(findTestObject('Object Repository/MainPage/Main Page - See all services') , 3, FailureHandling.CONTINUE_ON_FAILURE))
-				onHome=true;
-			else Mobile.pressBack();
-		}
-		println(onHome)
-	}
-
-
-	@Keyword
-	def back(int n) {
-		for(int i = 0 ; i < n ; i++){
-			Mobile.pressBack()
-		}
+	def checkAmount() {
+		
+		Mobile.tap(findTestObject('Object Repository/History/History'), 0)
+		
+		Mobile.delay(3)
+		
+		String Amount = Mobile.getText(findTestObject('Object Repository/History/Amount'), 0)
+		println(Amount)
+		
+		String Type = Mobile.getText(findTestObject('Object Repository/History/TransactionType'), 0)
+		println(Type)
+		
+		Mobile.pressBack()
 	}
 }

@@ -21,6 +21,8 @@ CustomKeywords.'test.ReSetUpApp.goToHome'()
 
 Mobile.tap(findTestObject('Object Repository/MainPage/Main Page - See all services'), 0)
 
+Mobile.scrollToText("Scan any QR")
+
 Mobile.tap(findTestObject('Object Repository/P2M/Scan any QR (1)'), 0)
 
 Mobile.tap(findTestObject('Object Repository/P2M/Enter Mobile Number or Merchant Code'), 0)
@@ -52,6 +54,7 @@ println(WalletBalance)
 //
 //Mobile.verifyElementText(findTestObject('Object Repository/P2M/MarchantCode - Paid'), MerchantCode, FailureHandling.STOP_ON_FAILURE)
 
+CustomKeywords.'test.ReSetUpApp.back'(5)
 
 Mobile.closeApplication()
 
